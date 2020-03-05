@@ -3,19 +3,39 @@ img{
 	border-radius: 100%;
 	width: 100%;
 }
+.image{
+	background-color: #00BCD4;
+}
+.prenom{
+	color: #0D47A1;
+}
+.metier{
+	text-decoration: underline #0D47A1;
+}
 h3{
-	border: 1px solid black;
+	border: 1px solid #0D47A1;
 	text-align: center;
+	background-color: #0D47A1;
 }
 p{
 	text-align: justify;
 }
+.sidebar{
+	background-color: #00BCD4;
+}
 .kiffe{
-	margin-left: 20%;
-	width: 70%;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	margin-left: 6%; 
+}
+.kiffe i{
+	border: 1px solid #0D47A1;
+	border-radius: 100%;
+	padding: 10%;
 }
 h4{
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #0D47A1;
 }
 .wrapper i{
 	margin-right: 20%;
@@ -23,8 +43,13 @@ h4{
 .lieu{
 	margin-left: 40%;
 }
-
-@media (min-width: 800px){
+.far{
+	margin-left: 45%;
+}
+.date{
+	margin-left: 35%;
+}
+@media (min-width: 700px){
 	.site{
 	display: grid;
 	grid-template-rows: auto;
@@ -40,7 +65,9 @@ h4{
 }
 .sidebar{
 	grid-area: sidebar;
-	background-color: red;
+}
+.sidebar p{
+	padding: 5%;
 }
 .wrapper{
 	grid-area: wrapper;
@@ -50,11 +77,18 @@ h4{
 .image{
 	grid-column: 1;
 	grid-row-start: 1;
-	border: 1px solid red;
-	background-color: red;
+	border: 1px solid #00BCD4;
+}
+h3, h4{
+	font-size: 1.3rem;
+}
+p{
+	font-size: 1rem;
 }
 .grandtitre{
 	margin-left: 50%;
+	margin-top: 10%;
+	font-size: 1.7rem;
 }
 .contact{
 	margin-bottom: 20%;
@@ -62,15 +96,33 @@ h4{
 #loisir{
 	margin-top: 200%;
 }
-.formation{
-	display: flex;
-	flex-direction: row;
+.kiffe{
+	margin-left: 1%;
 }
-.wrapper p{
-	width: 40%;
-}.etude {
-	width: 100% !important;
-	margin-left: 10%;
+.formation{
+	display: grid;
+	grid-template-columns: 10% 30% 60%;
+	grid-template-rows: 30% 30%;
+}
+.far{
+	grid-column: 1;
+	grid-row: 1;
+	float: left;
+	margin-top: 34%;
+	margin-left: 0;
+}
+.date{
+	grid-column-start: 2;
+	grid-row: 1;
+}
+.lieu{
+	grid-column-start: 2;
+	grid-row: 2;
+}
+.etude{
+	grid-column: 3;
+	grid-row: 1;
+	margin-top: -2%;
 }
 #reco{
 	margin-left: 20%;
@@ -87,5 +139,15 @@ h4{
 	}
 	h5{
 		font-size: 1.5rem;
+	}
+	.sidebar p{
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	#loisir{
+		margin-top: 130%;
+	}
+	.kiffe{
+		margin-left: 15%;
 	}
 }
