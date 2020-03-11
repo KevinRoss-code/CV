@@ -352,6 +352,10 @@ img{
 	border-radius: 100%;
 	width: 100%;
 }
+.sidebar, .wrapper, .header{
+	padding-left: 2%;
+	padding-right: 2%;
+}
 .image{
 	background-color: #00BCD4;
 }
@@ -386,6 +390,9 @@ p{
 h4{
 	border-bottom: 1px solid #0D47A1;
 	font-size: 1.5rem;
+}
+#reco h4{
+	font-size: 1.4em;
 }
 h5{
 	font-size: 1rem;
@@ -431,6 +438,10 @@ i{
 	margin-left: 10%;
 	margin-right: 5%;
 }
+.sidebar, .wrapper, .header{
+	padding-left: 0;
+	padding-right: 0;
+}
 .image{
 	grid-column: 1;
 	grid-row-start: 1;
@@ -457,6 +468,7 @@ p{
 	display: grid;
 	grid-template-columns: 10% 30% 60%;
 	grid-template-rows: 30% 30%;
+	align-items: baseline;
 }
 .far{
 	grid-column: 1;
@@ -468,20 +480,23 @@ p{
 .date{
 	grid-column-start: 2;
 	grid-row: 1;
-	padding-bottom: 10%;
+	display: flex;
+	justify-content: flex-start;
 }
 .lieu{
 	grid-column-start: 2;
 	grid-row: 2;
-	margin-top: 10%;
+	display: flex;
+	justify-content: flex-start;
 }
 .etude{
 	grid-column: 3;
 	grid-row: 1;
 	margin-top: -5%;
 }
-#reco{
-	margin-left: 20%;
+#reco p{
+	display: flex;
+	justify-content: center;
 }
 @media (min-width: 1200px){
 	p{
@@ -491,6 +506,9 @@ p{
 		font-size: 3rem;
 	}
 	h3, h4{
+		font-size: 2rem;
+	}
+	#reco h4{
 		font-size: 2rem;
 	}
 	h5{
