@@ -376,6 +376,8 @@ p{
 }
 .sidebar{
 	background-color: #00BCD4;
+	display: flex;
+	flex-direction: column;
 }
 .kiffe{
 	display: flex;
@@ -413,6 +415,9 @@ h5{
 }
 i{
 	font-size: 1.5rem;
+}
+.moi{
+	flex-grow: 1;
 }
 @media (min-width: 700px){
 	.site{
@@ -458,9 +463,6 @@ p{
 }
 .contact{
 	margin-bottom: 20%;
-}
-#loisir{
-	margin-top: 230%;
 }
 .formation{
 	display: grid;
@@ -518,8 +520,5 @@ p{
 	.sidebar p{
 		padding-right: 5%;
 		padding-left: 5%;
-	}
-	#loisir{
-		margin-top: 170%;
 	}
 }
