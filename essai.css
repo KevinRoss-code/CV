@@ -374,6 +374,9 @@ p{
 	padding-left: 2%;
 	padding-right: 2%;
 }
+article{
+    margin-bottom: 10%;
+}
 .sidebar{
 	background-color: #00BCD4;
 	display: flex;
@@ -409,6 +412,9 @@ h5{
 }
 .date{
 	margin-top: -10%;
+}
+.lieu{
+    margin-bottom: 5%;
 }
 .formation i{
 	visibility: hidden;
