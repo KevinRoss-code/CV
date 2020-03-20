@@ -395,6 +395,8 @@ article{
     height: 60px;
     padding: 2%;
     text-align: center;
+    align-items: center;
+    display: flex;
 }
 h4{
 	border-bottom: 1px solid #0D47A1;
