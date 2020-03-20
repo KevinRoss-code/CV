@@ -382,17 +382,16 @@ article{
 	display: flex;
 	flex-direction: column;
 }
-.kiffe{
-	display: flex;
-	justify-content: space-around;
-	margin: 0;
-	padding-bottom: 5%; 
+.flex{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+     justify-content: space-around;
 }
-.kiffe i{
+.ico{
 	border: 1px solid #0D47A1;
 	border-radius: 100%;
 	padding: 5%;
-    display: flex;
 }
 h4{
 	border-bottom: 1px solid #0D47A1;
